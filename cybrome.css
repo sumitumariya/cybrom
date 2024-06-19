@@ -1,0 +1,287 @@
+*{margin: 0;
+padding: 0;}
+body{background-color: darkturquoise;}
+
+.navbar{display: flex;align-items: center;
+justify-content: space-between;
+height: 80px;background-color: black;}
+
+.navbar ul li{
+display: inline-block;
+padding: 30px;
+font-size: 25px;
+}
+.navbar ul li a{
+color: rgb(189, 77, 77);
+text-decoration: none;
+}
+
+
+.navbar ul li::after{content: '';
+height: 3px;
+width: 0%;
+background: wheat;
+display: block;
+margin: auto;
+transition: 0.5s;}
+
+.navbar ul li:hover::after{width: 100%;}
+
+
+    
+#click{display: none;}
+.navbar label{display: none;}
+#click:checked~.navbar ul {display: block;}
+
+@media screen and (max-width:950px) {
+   
+    .navbar label{display: block;font-size: 40px;padding-right: 100px;}
+    .navbar ul{
+        margin-top: 450px;
+        position: absolute;
+        width: 100%;
+        background-color:black;
+        display: none;
+        padding: 20px;
+    }
+    .navbar ul li{
+        display: block;
+        padding: 20px 55px;color: #232321;
+    }
+    .ul li a:hover{color: red;}
+
+
+
+}
+
+/* ..........navbar............ */
+.home{display: flex;flex-wrap: wrap;
+align-items: center;
+gap: 20px;
+color: #071C4D;
+background-color: dodgerblue;}
+
+.home .divh{margin-left: 120px;}
+
+
+
+.home h1{font-size: 65px; margin-top: 5vh;
+color: #52525C;margin-left: 10vh;}
+
+
+.h{font-size: 30px;
+margin-top: 20px;text-align: center;margin: 10vh;}
+
+
+.s1{display: flex;flex-wrap: wrap;
+text-align: center;
+justify-content: center;margin-left: 10px;}
+
+
+.s1 h3{font-size: 16px;}
+
+.s2{display: flex;flex-wrap: wrap;
+     text-align:center;justify-content: center;margin-right: 10px;
+}
+.s2 h3{font-size: 16px}
+
+.s1 .a{ margin: 35px;
+    margin-left: 120PX;
+     padding: 20px;}
+
+.s1 .a i{ font-size: 45px;}
+
+.s2 .a{margin: 35px; 
+    margin-left: 120PX;
+    padding: 20px;}
+
+.s2 .a i{ font-size: 45px;}
+
+
+
+
+/* .........................why.............................. */
+
+.why{display: inline;flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;}
+
+
+.why h1{font-size: 55px;}
+
+.why .w1{padding: 35px;
+    padding-left: 15%;
+    display:flex;flex-wrap: wrap;
+}
+
+
+.why .w2{padding: 35px;
+    padding-left: 15%;
+    display:flex;flex-wrap: wrap;
+}
+.why .why1{border: 2px solid black;
+    padding: 25px;
+     margin: 10px;
+      border-radius: 20px;
+    }
+
+
+    .why .why1:hover{box-shadow: 5px 8px black;}
+    .why .why2:hover{box-shadow: 5px 8px black;}
+    .why .why3:hover{box-shadow: 5px 8px black;}
+    .why .why4:hover{box-shadow: 5px 8px black;}
+
+
+
+
+.why .why2{border: 2px solid black;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    margin-left: 20vh;
+}
+.why .why3{border: 2px solid black;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 20px;}
+.why .why4{border: 2px solid black;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 20px;
+margin-left: 22vh;}
+
+
+
+
+/* ...........................................about......................................... */
+.about{display: inline;}
+ .about1{display: flex;flex-wrap: wrap;}
+ .about1 .div{margin-left: 35vh;}
+ .about1 .div1{
+    margin-left: 30vh;
+    margin-bottom: 50vh;
+    padding-top: 30vh;
+}
+.about1 .div1 h2{margin: 10px;font-size: 45px;}
+
+
+
+
+/* ...................about2..................... */
+ .about2{display: flex;flex-wrap: wrap;}
+ .about2 .div{margin-left: 20vh;}
+ .about2 .div2{margin-bottom: 50vh;
+    margin-left: 30vh;
+    padding-top: 30vh;}
+    .about2 .div2 h2{margin: 10px;
+        font-size: 45px;}
+
+
+
+
+/* ..................about3....................... */
+ .about3{display: flex; }
+ .about3 .div{margin-left: 35vh;}
+ .about3 .div3{margin-bottom: 50vh;
+    margin-left: 30vh;
+    padding-top: 20vh;}
+    .about3 .div3 h2{margin: 10px;
+        font-size: 45px;}
+
+
+
+
+/* ..........................about4................ */
+ .about4{display: flex;flex-wrap: wrap;}
+ .about4 .div{margin-left: 35vh;}
+ .about4 .div4{margin-bottom: 50vh;
+    margin-left: 30vh;
+padding-top: 30vh;
+}
+.about4 .div4 h2{margin: 10px;
+    font-size: 45px;}
+li{font-size: 20px; margin-bottom: 10px;}
+
+
+
+
+    /* .............................................courses.................................. */
+
+    h1{font-size: 60px;
+        font-style: italic;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .course{font-size: 35px;flex-wrap: nowrap ;
+        margin-left: 30%;
+        margin: 30vh;}
+    .course li{list-style: circle; 
+        color: #071C4D; font-weight: 600;
+    margin-top: 20px;}
+   
+    /* ................................contact...................... */
+  
+
+.form{display: flex;}
+.form .c2{text-align: center;background-color: lightgrey;
+    margin: 10px;
+}
+.form .c2{border: 2px solid black; border-radius: 15px; height: 500px;width: 800px;}
+.form .c2 input{padding-bottom: 5px;
+border-radius: 15px;
+ margin-bottom: 15px;
+font-size: 35px;
+background-color: #a7a7ab;
+border: none;}
+.form .c2 input:hover{border:2px solid  #071C4D;
+box-shadow: 5px 5px rgba(28, 15, 15, 0.442);
+}
+
+
+ ::placeholder{font-style: italic;font-size: 20px;
+   
+    color: #3e3e48; text-align: center; }
+
+    
+.form .c2 h2{margin: 25px;}
+.form .c2 h3{margin: 15px;}
+.form .c2 button{ font-size: 20px;color: white; width: 500px;
+border-radius: 7px;background-color: #5f5ff3; }
+
+
+
+
+
+
+
+
+
+
+/* ....................................footer */
+
+footer{
+    
+    flex-wrap: wrap;display: flex;
+}
+.foot-panel1{background-color: #071C4D;
+    display: flex;
+    width: 100%;
+    border-top:2px solid #071C4D;
+    border-bottom:2px solid #071C4D;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.foot-panel1 ul li{
+    display: block;
+    font-size: large;
+    margin: 10px;
+    color: white;
+}
+ul p{font-weight: 500;font-size: 25px;
+    color:white;
+    margin: 10px;
+}
+.copyright{font-size: small;
+    text-align: center;
+    padding-top: 5px;height: 30px;
+}
